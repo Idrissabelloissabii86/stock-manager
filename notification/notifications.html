@@ -1,0 +1,305 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Stock Manager Dashboard</title>
+    <link rel="stylesheet" href="../dash_style_global.css">
+    <link rel="stylesheet" href="./notif_style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Open+Sans:ital,wght@0,300..800;1,300..800&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
+</head>
+<body id="body">
+    <input type="checkbox" name="" id="sidebar-checked" hidden>
+    <aside class="sidebar">
+    <div>
+      <div class="logo flex">
+        <i class="fa-solid fa-chart-line "></i>
+        <h1>Dashboard</h1>
+      </div>
+      
+      <nav class="nav-links">
+        <a href="../dashboard/dashboard.html" class="flex"><i class="fa-solid fa-gauge-high"></i>Tableau de bord</a>
+        <a href="../analytic/analytics.html" class="flex"><i class="fa-solid fa-chart-line "></i>Analytics</a>
+        <a href="../commande/commandes.html" class="flex"><i class="fa-solid fa-cart-shopping"></i>Commandes</a>
+        <a href="../settings/settings.html" class="flex"><i class="fa-solid fa-gears"></i>Paramètres</a>
+        <a href="../rapport/rapports.html" class="flex"><i class="fa-solid fa-chart-bar"></i>Rapports</a>
+        <a href="./notifications.html" class="flex"><i class="fa-solid fa-bell"></i>Notifications</a>
+      </nav>
+    </div>
+
+    <div class="bottom-links flex">
+        <a href="#" class="admin-btn flex">
+            <div class="icon-admin"><span class="flex"><i class="fa-solid fa-user"></span></i></div>
+            <div class="name-role">
+                <p class="admin-text">Administrateur</p>
+                <p class="admin-statut">Gestionaire</p>
+            </div>
+        </a>
+      <a href="#body" class="profile-btn flex"><i class="fa-solid fa-circle-user" style="color: #ffff;"></i>Mon Profil</a>
+      <a href="../index.html" class="logout-btn flex"><i class="fa-solid fa-right-from-bracket"></i>Déconnexion</a>
+    </div>
+  </aside>
+   <!-- HEADER -->
+  <header>
+        <div class="header-left flex">
+            <label for="sidebar-checked">
+                <i class="fa-solid fa-bars"></i>
+            </label>
+            
+            <h1 class="title">Gestion de stock - Produits Électroniques</h1>
+        </div>
+        <div class="header-right">
+            <div class="icon flex">
+                <span class="notif flex">3</span>
+                <i class="fa-solid fa-bell"></i>
+                <i class="fa-solid fa-circle-user"></i>
+                <span>Administrateur</span>
+            </div>
+        </div>
+    </header>
+    <!-- CONTENU -->
+    <main class="main-content content">
+      <div class="title flex">
+            <i class="fa-solid fa-bell"></i>
+            <h2>Notifications & Alertes</h2>
+        </div>
+        <p>Centre de notifications et gestion des alertes système</p>
+
+        <!-- Card section -->
+        <section>
+            <div class="dashboard-card">
+                <div class="card first flex">
+                    <div class="card-icon flex">
+                        <i class="fa-solid fa-envelope"></i>
+                    </div>
+                    <div class="card-text flex">
+                        <h2>12</h2>
+                        <p>Non lues</p>
+                    </div>
+                </div>
+                <div class="card second flex">
+                    <div class="card-icon flex">
+                        <i class="fa-solid fa-triangle-exclamation"></i>
+                    </div>
+                    <div class="card-text flex">
+                        <h2>3</h2>
+                        <p>Urgentes</p>
+                    </div>
+                </div>
+                <div class="card three flex">
+                    <div class="card-icon flex">
+                        <i class="fa-regular fa-calendar-days"></i>
+                    </div>
+                    <div class="card-text flex">
+                        <h2>23</h2>
+                        <p>Aujourd'hui</p>
+                    </div>
+                </div>
+                <div class="card four flex">
+                    <div class="card-icon flex">
+                        <i class="fa-solid fa-list"></i>
+                    </div>
+                    <div class="card-text flex">
+                        <h2>156</h2>
+                        <p>Total</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!-- Section Filtre -->
+        <section class="rapports-first">
+            <div class="select">
+                <p>Type :</p>
+                    <select name="" id="categories">
+                        <option>Toutes</option>
+                        <option value="">Rapport des ventes</option>
+                        <option value="">Rapport des commandes</option>
+                        <option value="">Rapport des modifications</option>
+                    </select>
+            </div>
+            <div class="select">
+                <p>Priorité :</p>
+                <select name="" id="periode">
+                    <option>Toutes</option>
+                    <option value="">Ce mois</option>
+                    <option value="">Cette semaine</option>
+                    <option value="">Cette année</option>
+                </select>
+            </div>
+            <div class="select">
+                <p>Statut :</p>
+                <select name="" id="format">
+                    <option>Toutes</option>
+                    <option value="">PDF</option>
+                    <option value="">XLS</option>
+                </select>
+            </div>
+            <div class="filter">
+                <button><i class="fa-solid fa-filter"></i><p>Filtre</p></button> 
+            </div>
+        </section>
+
+        <!-- Notif section -->
+         <section class="notif-card">
+            <div class="card1 flex">
+                <div class="left flex">
+                    <div class="card1-icon">
+                        <i class="fa-solid fa-bell"></i>
+                    </div>
+                    <div class="card1-info flex">
+                        <h2>Stock critique détecté</h2>
+                        <p>Le Produits "AirPods Pro 2" a atteint le seuil critique de stock (3 unités restantes). Veuillez passer la commande rapidement</p>
+                        <div class="card1-btn-group flex">
+                            <button class="commande">Passer commande</button>
+                            <button class="lu">Marquer comme lu</button>
+                        </div>
+                    </div>
+                </div>
+                <div class="right">
+                    <p>Il y a 5 minutes</p>
+                </div>
+                
+            </div>
+            <div class="card2 flex">
+                <div class="left flex">
+                    <div class="card1-icon">
+                        <i class="fa-solid fa-info"></i>
+                    </div>
+                    <div class="card1-info flex">
+                        <h2>Nouvelle commande reçu</h2>
+                        <p>Le Produits "AirPods Pro 2" a atteint le seuil critique de stock (3 unités restantes). Veuillez passer la commande rapidement</p>
+                        <div class="card1-btn-group flex">
+                            <button class="commande">Voir la commande</button>
+                            <button class="lu">Marquer comme lu</button>
+                        </div>
+                    </div>
+                </div>
+                <div class="right">
+                    <p>Il y a 15 minutes</p>
+                </div>
+                
+            </div>
+            <div class="card3 flex">
+                <div class="left flex">
+                    <div class="card1-icon">
+                        <i class="fa-solid fa-check"></i>
+                    </div>
+                    <div class="card1-info flex">
+                        <h2>Commande Expédiée</h2>
+                        <p>Le Produits "AirPods Pro 2" a atteint le seuil critique de stock (3 unités restantes). Veuillez passer la commande rapidement</p>
+                        <div class="card1-btn-group flex">
+                            <button class="commande">Suivre l'envoi</button>
+                        </div>
+                    </div>
+                </div>
+                <div class="right">
+                    <p>Il y a 1 heure</p>
+                </div>
+                
+            </div>
+            <div class="card4 flex">
+                <div class="left flex">
+                    <div class="card1-icon">
+                        <i class="fa-solid fa-gear"></i>
+                    </div>
+                    <div class="card1-info flex">
+                        <h2>Sauvegarde automatique terminée</h2>
+                        <p>Le Produits "AirPods Pro 2" a atteint le seuil critique de stock (3 unités restantes). Veuillez passer la commande rapidement</p>
+                        <div class="card1-btn-group flex">
+                            <button class="lu">Voir les détails</button>
+                        </div>
+                    </div>
+                </div>
+                <div class="right">
+                    <p>Il y a 2 heures</p>
+                </div>
+                
+            </div>
+
+            <div class="card5 flex">
+                <div class="left flex">
+                    <div class="card1-icon">
+                        <i class="fa-solid fa-shield-halved"></i>
+                    </div>
+                    <div class="card1-info flex">
+                        <h2>Connexion Depuis un nouvel appareil</h2>
+                        <p>Le Produits "AirPods Pro 2" a atteint le seuil critique de stock (3 unités restantes). Veuillez passer la commande rapidement</p>
+                        <div class="card1-btn-group flex">
+                            <button class="commande">Sécuriser le compte</button>
+                        </div>
+                    </div>
+                </div>
+                <div class="right">
+                    <p>Il y a 3 heures</p>
+                </div>
+                
+            </div>
+            <div class="all flex">
+                <div class="left-all flex">
+                    <input type="checkbox" name="" id="">
+                    <p>Sélectionner tout</p>
+                </div>
+                <div class="right-all flex">
+                    
+                        <button class="last-card-btn marquer flex"><i class="fa-solid fa-check"></i>Marquer comme lu</button>
+                        <button class="last-card-btn supprimer flex"><i class="fa-solid fa-trash"></i>Supprimer</button>
+                   
+                    
+                </div>
+            </div>
+         </section>
+    </main>
+  </div>
+  <div class="popup-profile" id="pop">
+        <div class="popup-card">
+            <div class="card-header flex">
+                <a href="#" class="flex"><i class="fa-solid fa-circle-user"></i>Mon Profil</a>
+                <a href="#pop"><i class="fa-solid fa-xmark"></i></a>
+            </div>
+            <hr>
+            <form id="profileForm" class="flex">
+                <div class="card-profile flex">
+                    <i class="fa-solid fa-circle-user"></i>
+                    <button type="submit">Changer la photo</button>
+                </div>
+        
+                <div class="grid">
+                    <div>
+                        <label for="nom">Nom</label>
+                        <input id="nom" name="nom" type="text" placeholder="Administrateur" />
+                    </div>
+
+                    <div>
+                        <label for="prenom">Prénom</label>
+                        <input id="prenom" name="prenom" type="text" placeholder="Jean" />
+                    </div>
+                    <div class="div3">
+                        <label for="email">Email</label>
+                        <input id="email" name="email" type="email" placeholder="admin@dashboard.com" />
+                    </div>
+                    <div class="div4">
+                        <label for="tel">Téléphone</label>
+                        <input id="tel" name="tel" type="tel" placeholder="+33 6 12 34 56 78" />
+                    </div>
+                </div>
+                <div class="grid2">
+                    <div>
+                        <label for="role">Rôle</label>
+                        <input id="role" name="role" type="text" placeholder="Gestionnaire">
+                    </div>
+
+                    <div>
+                        <label for="lastconn">Dernière connexion</label>
+                        <input id="lastconn" name="lastconn" type="text" placeholder="15 Janvier 2024 à 14:30"/>
+                    </div>  
+                </div>
+            </form>
+            <footer class="card-footer">
+                <button type="button" class="btn btn-ghost">Fermer</button>
+                <button type="submit" form="profileForm" class="btn btn-primary">Sauvegarder</button>
+            </footer>
+        </div>
+  </div>
+</body>
+</html>

@@ -1,0 +1,313 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Stock Manager Dashboard</title>
+    <link rel="stylesheet" href="./rapport_style.css">
+    <link rel="stylesheet" href="../dash_style_global.css">
+    
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Open+Sans:ital,wght@0,300..800;1,300..800&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
+</head>
+<body id="body">
+    <input type="checkbox" name="" id="sidebar-checked" hidden>
+    <aside class="sidebar">
+    <div>
+      <div class="logo flex">
+        <i class="fa-solid fa-chart-line "></i>
+        <h1>Dashboard</h1>
+      </div>
+      
+      <nav class="nav-links">
+        <a href="../dashboard/dashboard.html" class="flex"><i class="fa-solid fa-gauge-high"></i>Tableau de bord</a>
+        <a href="../analytic/analytics.html" class="flex"><i class="fa-solid fa-chart-line "></i>Analytics</a>
+        <a href="../commande/commandes.html" class="flex"><i class="fa-solid fa-cart-shopping"></i>Commandes</a>
+        <a href="../settings/settings.html" class="flex"><i class="fa-solid fa-gears"></i>Paramètres</a>
+        <a href="./rapports.html" class="flex"><i class="fa-solid fa-chart-bar"></i>Rapports</a>
+        <a href="../notification/notifications.html" class="flex"><i class="fa-solid fa-bell"></i>Notifications</a>
+      </nav>
+    </div>
+
+    <div class="bottom-links flex">
+        <a href="#" class="admin-btn flex">
+            <div class="icon-admin"><span class="flex"><i class="fa-solid fa-user"></span></i></div>
+            <div class="name-role">
+                <p class="admin-text">Administrateur</p>
+                <p class="admin-statut">Gestionaire</p>
+            </div>
+        </a>
+      <a href="#body" class="profile-btn flex"><i class="fa-solid fa-circle-user" style="color: #ffff;"></i>Mon Profil</a>
+      <a href="../index.html" class="logout-btn flex"><i class="fa-solid fa-right-from-bracket"></i>Déconnexion</a>
+    </div>
+  </aside>
+  <!-- HEADER -->
+  <header>
+        <div class="header-left flex">
+            <label for="sidebar-checked">
+                <i class="fa-solid fa-bars"></i>
+            </label>
+            
+            <h1 class="title">Gestion de stock - Produits Électroniques</h1>
+        </div>
+        <div class="header-right">
+            <div class="icon flex">
+                <span class="notif flex">3</span>
+                <i class="fa-solid fa-bell"></i>
+                <i class="fa-solid fa-circle-user"></i>
+                <span>Administrateur</span>
+            </div>
+        </div>
+    </header>
+
+  <!-- CONTENU PRINCIPAL -->
+  
+    
+    
+
+    <!-- CONTENU -->
+    <main class="main-content content">
+        <div class="title flex">
+            <i class="fa-solid fa-chart-bar"></i>
+            <h2>Rapports & Analytics</h2>
+        </div>
+        <p>Génération et consultation des rapports détaillés</p>
+        <section class="rapports-first">
+            <div class="select">
+                <p>Type de rapport :</p>
+                    <select name="" id="categories">
+                        <option value="">Rapport des ventes</option>
+                        <option value="">Rapport des commandes</option>
+                        <option value="">Rapport des modifications</option>
+                    </select>
+            </div>
+            <div class="select">
+                <p>Période :</p>
+                <select name="" id="periode">
+                    <option value="">Ce mois</option>
+                    <option value="">Cette semaine</option>
+                    <option value="">Cette année</option>
+                </select>
+            </div>
+            <div class="select">
+                <p>Format :</p>
+                <select name="" id="format">
+                    <option value="">PDF</option>
+                    <option value="">XLS</option>
+                </select>
+            </div>
+            <div class="filter">
+               <button><i class="fa-solid fa-filter"></i><p>Générer le rapport</p></button> 
+            </div>
+        </section>
+        <section class="rapports-second">
+            <div class="dashboard-card">
+                <div class="card first flex">
+                   
+                        <div class="card-icon flex">
+                            <i class="fa-solid fa-chart-line "></i>
+                        </div>
+                    
+                    <div class="card-text flex">
+                        <h3>Ventes du mois</h3>
+                        <div class="stat flex">
+                            <div>
+                                <p class="text-blue">€45,678</p>
+                                <p>Chiffres d'affaires</p>
+                            </div>
+                            <div>
+                                <p class="text-blue">+12,5%</p>
+                                <p>vs mois dernier</p>
+                            </div>
+                        </div>
+                        <div class="stat-btn">
+                            <button>Voir détails</button>
+                        </div>
+                    </div>
+                </div>
+                <div class="card second flex">
+                    <div class="card-icon flex">
+                        <i class="fa-solid fa-boxes-stacked"></i>
+                    </div>
+                    <div class="card-text flex">
+                        <h3>Etat d stock</h3>
+                        <div class="stat flex">
+                            <div>
+                                <p class="text-blue">1,234</p>
+                                <p>Articles en staock</p>
+                            </div>
+                            <div>
+                                <p class="text-blue">23</p>
+                                <p>stock faible</p>
+                            </div>
+                        </div>
+                        <div class="stat-btn">
+                            <button>Voir détails</button>
+                        </div>
+                    </div>
+                </div>
+                <div class="card three flex">
+                    <div class="card-icon flex">
+                        <i class="fa-solid fa-users"></i>
+                    </div>
+                    <div class="card-text flex">
+                        <h3>Clients</h3>
+                        <div class="stat flex">
+                            <div>
+                                <p class="text-blue">856</p>
+                                <p>Nouveaux clients</p>
+                            </div>
+                            <div>
+                                <p class="text-blue">2,345</p>
+                                <p>Total clients</p>
+                            </div>
+                        </div>
+                        <div class="stat-btn">
+                            <button>Voir détails</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section class="rapports-table">
+            <div class="section-head flex">
+                <i class="fa-solid fa-clock-rotate-left"></i>
+                <h2>Historiques des Rapports</h2>
+            </div>
+            <!-- taleau -->
+
+            <table>
+                <thead>
+                    <tr>
+                    <th>Nom de rapport</th>
+                    <th>Type</th>
+                    <th>Date de génération</th>
+                    
+                    
+                    <th>Statut</th>
+                    <th>ACTIONS</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>
+                            <div class="table-first-cel flex">
+                                <i class="fa-solid fa-file-pdf"></i>
+                                <p>Rapport_ventes_janvier_2024.pdf</p>
+                            </div>
+                        </td>
+                        <td>
+                            <div class="product-info">
+                                <p>ventes</p>
+                            </div>
+                        </td>
+                        <td><p>15 Janvier 2024</p></td>
+                        
+                       
+                        <td><p>Terminé</p></td>
+                        <td class="actions">
+                            <i class="fa-solid fa-download"></i>
+                            <i class="fa-solid fa-trash"></i>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>
+                            <div class="table-first-cel flex">
+                                <i class="fa-solid fa-file-excel"></i>
+                                <p>Stock_inventaire_janvier_2024.xlsx</p>
+                            </div>
+                        </td>
+                        <td>
+                            <div class="product-info">
+                                <p>stock</p>
+                            </div>
+                        </td>
+                        <td><p>14 Janvier 2024</p></td>
+                        
+                       
+                        <td><p>Terminé</p></td>
+                        <td class="actions">
+                            <i class="fa-solid fa-download"></i>
+                            <i class="fa-solid fa-trash"></i>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>
+                            <div class="table-first-cel flex">
+                                <i class="fa-solid fa-spinner"></i>
+                                <p>Rapport_financier_trimestre.xlsx</p>
+                            </div>
+                        </td>
+                        <td>
+                            <div class="product-info">
+                                <p>Financier</p>
+                            </div>
+                        </td>
+                        <td><p>En cours...</p></td>
+                        
+                       
+                        <td><p>En cours</p></td>
+                        <td class="actions">
+                            <i class="fa-solid fa-xmark"></i>
+                        </td>
+                    </tr>
+
+                    
+                    
+                </tbody>
+            </table>
+        </section>
+    </main>
+
+  <div class="popup-profile" id="pop">
+        <div class="popup-card">
+            <div class="card-header flex">
+                <a href="#" class="flex"><i class="fa-solid fa-circle-user"></i>Mon Profil</a>
+                <a href="#pop"><i class="fa-solid fa-xmark"></i></a>
+            </div>
+            <hr>
+            <form id="profileForm" class="flex">
+                <div class="card-profile flex">
+                    <i class="fa-solid fa-circle-user"></i>
+                    <button type="submit">Changer la photo</button>
+                </div>
+        
+                <div class="grid">
+                    <div>
+                        <label for="nom">Nom</label>
+                        <input id="nom" name="nom" type="text" placeholder="Administrateur" />
+                    </div>
+
+                    <div>
+                        <label for="prenom">Prénom</label>
+                        <input id="prenom" name="prenom" type="text" placeholder="Jean" />
+                    </div>
+                    <div class="div3">
+                        <label for="email">Email</label>
+                        <input id="email" name="email" type="email" placeholder="admin@dashboard.com" />
+                    </div>
+                    <div class="div4">
+                        <label for="tel">Téléphone</label>
+                        <input id="tel" name="tel" type="tel" placeholder="+33 6 12 34 56 78" />
+                    </div>
+                </div>
+                <div class="grid2">
+                    <div>
+                        <label for="role">Rôle</label>
+                        <input id="role" name="role" type="text" placeholder="Gestionnaire">
+                    </div>
+
+                    <div>
+                        <label for="lastconn">Dernière connexion</label>
+                        <input id="lastconn" name="lastconn" type="text" placeholder="15 Janvier 2024 à 14:30"/>
+                    </div>  
+                </div>
+            </form>
+            <footer class="card-footer">
+                <button type="button" class="btn btn-ghost">Fermer</button>
+                <button type="submit" form="profileForm" class="btn btn-primary">Sauvegarder</button>
+            </footer>
+        </div>
+  </div>
+</body>
+</html>

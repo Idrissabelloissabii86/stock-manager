@@ -1,0 +1,399 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Stock Manager Dashboard</title>
+    <link rel="stylesheet" href="../dash_style_global.css">
+    <link rel="stylesheet" href="./analytic_style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Open+Sans:ital,wght@0,300..800;1,300..800&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
+</head>
+<body id="body">
+    <input type="checkbox" name="" id="sidebar-checked" hidden>
+    <aside class="sidebar">
+    <div>
+      <div class="logo flex">
+        <i class="fa-solid fa-chart-line "></i>
+        <h1>Dashboard</h1>
+      </div>
+      
+      <nav class="nav-links">
+        <a href="../dashboard/dashboard.html" class="flex"><i class="fa-solid fa-gauge-high"></i>Tableau de bord</a>
+        <a href="./analytics.html" class="flex"><i class="fa-solid fa-chart-line "></i>Analytics</a>
+        <a href="../commande/commandes.html" class="flex"><i class="fa-solid fa-cart-shopping"></i>Commandes</a>
+        <a href="../settings/settings.html" class="flex"><i class="fa-solid fa-gears"></i>Paramètres</a>
+        <a href="../rapport/rapports.html" class="flex"><i class="fa-solid fa-chart-bar"></i>Rapports</a>
+        <a href="../notification/notifications.html" class="flex"><i class="fa-solid fa-bell"></i>Notifications</a>
+      </nav>
+    </div>
+
+    <div class="bottom-links flex">
+        <a href="#" class="admin-btn flex">
+            <div class="icon-admin"><span class="flex"><i class="fa-solid fa-user"></span></i></div>
+            <div class="name-role">
+                <p class="admin-text">Administrateur</p>
+                <p class="admin-statut">Gestionaire</p>
+            </div>
+        </a>
+      <a href="#body" class="profile-btn flex"><i class="fa-solid fa-circle-user" style="color: #ffff;"></i>Mon Profil</a>
+      <a href="../index.html" class="logout-btn flex"><i class="fa-solid fa-right-from-bracket"></i>Déconnexion</a>
+    </div>
+  </aside>
+  <!-- HEADER -->
+  <header>
+        <div class="header-left flex">
+            <label for="sidebar-checked">
+                <i class="fa-solid fa-bars"></i>
+            </label>
+            
+            <h1 class="title">Gestion de stock - Produits Électroniques</h1>
+        </div>
+        <div class="header-right">
+            <div class="icon flex">
+                <span class="notif flex">3</span>
+                <i class="fa-solid fa-bell"></i>
+                <i class="fa-solid fa-circle-user"></i>
+                <span>Administrateur</span>
+            </div>
+        </div>
+    </header>
+
+
+
+
+
+
+  <!-- CONTENU PRINCIPAL -->
+  <div class="main-content">
+
+    <!-- CONTENU -->
+    <main class="content">
+      <div class="analytic-header-logo flex">
+        <i class="fa-solid fa-chart-line "></i>
+        <h1>Analytics & Rapports</h1>
+      </div>
+      <p>Analyse complète des performances et tendances</p>
+      <section>
+            <div class="dashboard-card">
+                <div class="card first flex">
+                    <div class="card-icon flex">
+                        <i class="fa-solid fa-chart-line "></i>
+                    </div>
+                    <div class="card-text flex">
+                        <h2>€45,678</h2>
+                        <p>Chiffre d'affaires</p>
+                        <p class="positif">+12.5%</p>
+                    </div>
+                </div>
+                <div class="card second flex">
+                    <div class="card-icon flex">
+                        <i class="fa-solid fa-cart-shopping"></i>
+                    </div>
+                    <div class="card-text flex">
+                        <h2>1,234</h2>
+                        <p>Commandes</p>
+                        <p class="positif">+8.2%</p>
+                    </div>
+                </div>
+                <div class="card three flex">
+                    <div class="card-icon flex">
+                        <i class="fa-solid fa-users"></i>
+                    </div>
+                    <div class="card-text flex">
+                        <h2>856</h2>
+                        <p>Nouveaux clients</p>
+                        <p class="negatif">+12.5%</p>
+                    </div>
+                </div>
+                <div class="card four flex">
+                    <div class="card-icon flex">
+                        <i class="fa-solid fa-percent"></i>
+                    </div>
+                    <div class="card-text flex">
+                        <h2>3.4%</h2>
+                        <p>Taux de conversion</p>
+                        <p class="positif">+0.3%</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!-- Evolution des ventes -->
+        <section class="evolution-ventes">
+            <div class="ventes-left">
+                <div class="left-header">
+                    <div class="icon-titre flex">
+                        <i class="fa-solid fa-chart-area"></i>
+                        <p>Evolution des ventes</p>
+                    </div>
+                    <select>
+                        <option value="mois">30 derniers jours</option>
+                        <option value="anne">Électronique</option>
+                        <option value="vetements">Vêtements</option>
+                        <option value="accessoires">Accessoires</option>
+                    </select>
+                </div>
+                <div class="left-content flex">
+                    <div class="left-graph flex">
+                        <span style="height: 50px;"></span>
+                        <p>Jan</p>
+                        <p class="price" style="color: blue;">€8,500</p>
+                    </div>
+                    <div class="left-graph flex">
+                        <span style="height: 120px;"></span>
+                        <p>Feb</p>
+                        <p class="price" style="color: blue;">€9,200</p>
+                    </div>
+                    <div class="left-graph flex">
+                        <span style="height: 100px;"></span>
+                        <p>Mars</p>
+                        <p class="price" style="color: blue;">€7,800</p>
+                    </div>
+                    <div class="left-graph flex">
+                        <span style="height: 150px;"></span>
+                        <p>Avril</p>
+                        <p class="price" style="color: blue;">€9,500</p>
+                    </div>
+                    <div class="left-graph flex">
+                        <span style="height: 125px;"></span>
+                        <p>Mai</p>
+                        <p class="price" style="color: blue;">€8,800</p>
+                    </div>
+                    <div class="left-graph flex">
+                        <span style="height: 165px;"></span>
+                        <p>Jun</p>
+                        <p class="price" style="color: blue;">€8,500</p>
+                    </div>
+                    <div class="left-graph flex">
+                        <span style="height: 125px;"></span>
+                        <p>Jul</p>
+                        <p class="price" style="color: blue;">€8,500</p>
+                    </div>
+                    <div class="left-graph flex">
+                        <span style="height: 260px;"></span>
+                        <p>Aug</p>
+                        <p class="price" style="color: blue;">€8,500</p>
+                    </div>
+                    <div class="left-graph flex">
+                        <span style="height: 195px;"></span>
+                        <p>Sept</p>
+                        <p class="price" style="color: blue;">€8,500</p>
+                    </div>
+                    <div class="left-graph flex">
+                        <span style="height: 160px;"></span>
+                        <p>Oct</p>
+                        <p class="price" style="color: blue;">€8,500</p>
+                    </div>
+                    <div class="left-graph flex">
+                        <span style="height: 260px;"></span>
+                        <p>Nov</p>
+                        <p class="price" style="color: blue;">€8,500</p>
+                    </div>
+                    <div class="left-graph flex">
+                        <span style="height: 230px;"></span>
+                        <p>Dec</p>
+                        <p class="price" style="color: blue;">€8,500</p>
+                    </div>
+
+                </div>
+                <div class="left-footer flex">
+                    <span class="blue"></span> <p>Ventes Réelles</p><span class="green"></span><p>Objectifs</p>
+                </div>
+            </div>
+            <div class="ventes-right">
+                <div class="right-header">
+                    <div class="icon-titre flex">
+                        <i class="fa-solid fa-chart-bar"></i>
+                        <p>Evolution des ventes</p>
+                    </div>
+                </div>
+                <div class="right-content">
+                    <div class="category-percent flex">
+                        <div class="top-text flex">
+                            <p>Smartphones</p>
+                            <p style="color: blue;">€15,980</p>
+                        </div>
+                        <div class="percent flex">
+                            <span></span><p>35%</p>
+                        </div>
+                        <div class="top-text flex">
+                            <p>Laptops</p>
+                            <p style="color: blue;">€11,415</p>
+                        </div>
+                        <div class="percent flex">
+                            <span></span><p>25%</p>
+                        </div>
+                        <div class="top-text flex">
+                            <p>Tablettes</p>
+                            <p style="color: blue;">€9,132</p>
+                        </div>
+                        <div class="percent flex">
+                            <span></span><p>20%</p>
+                        </div>
+                        <div class="top-text flex">
+                            <p>Accessoires</p>
+                            <p style="color: blue;">€9,132</p>
+                        </div>
+                        <div class="percent flex">
+                            <span></span><p>20%</p>
+                        </div>
+                    </div>
+                        
+                </div>
+            </div>
+        </section>
+
+        <!-- Tableau -->
+
+        <section class="stock-table">
+                    
+            <div class="table-title flex">
+                <div class="title-left flex">
+                    <i class="fa-solid fa-trophy"></i>
+                    <p class="title-left-p">Top Produits</p>
+                </div>
+                <select>
+                    <option value="">Par ventes</option>
+                    <option value="">Par revenus</option>
+                    <option value="">Par marge</option>
+                </select>
+                
+            </div>
+            <table>
+                <thead>
+                    <tr>
+                    <th>Rang</th>
+                    <th>Produit</th>
+                    <th>Ventes</th>
+                    <th>Revenues</th>
+                    <th>Marge</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>
+                            <span class="span-analytics" style="background-color: orange;">1</span>
+                        </td>
+                        <td>
+                            <div class="product-info">
+                            <div class="icon"><i class="fa-solid fa-mobile"></i></div>
+                            <div>
+                                <strong>iPhone 15 Pro</strong><br>
+                            </div>
+                            </div>
+                        </td>
+                        
+                        <td>234</td>
+                        <td><span class="status">€280,866</span></td>
+                        <td class="actions">
+                            €42,130
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>
+                            <span class="span-analytics" style="background-color: grey;">2</span>
+                        </td>
+                        <td>
+                            <div class="product-info">
+                                <div class="icon"><i class="fa-solid fa-desktop"></i></div>
+                            <div>
+                                <strong>MacBook Pro 16"</strong><br>
+                            </div>
+                            </div>
+                        </td>
+                        
+                        
+                        <td>89</td>
+                        <td><span class="status">€257,911</span></td>
+                        <td class="actions">
+                            €51,582
+                        </td>
+                    </tr>
+
+                    
+                    
+                    <tr>
+                        <td>
+                           <span class="span-analytics" style="background-color: orange;">3</span>
+                        </td>
+                        <td>
+                            <div class="product-info">
+                            <div class="icon"><i class="fa-solid fa-headphones"></i></div>
+                            <div>
+                                <strong>AirPods Pro 2</strong><br>
+                            </div>
+                            </div>
+                        </td>
+                        
+                        <td>445</td>
+                        <td><span>€124,155</span></td>
+                        <td class="actions">
+                            €18,623
+                        </td>
+                    </tr>
+                </tbody>
+            </table>
+        </section>
+
+
+    </main>
+  </div>
+
+
+
+
+
+
+  <!-- Pop-up -->
+  <div class="popup-profile" id="pop">
+        <div class="popup-card">
+            <div class="card-header flex">
+                <a href="#" class="flex"><i class="fa-solid fa-circle-user"></i>Mon Profil</a>
+                <a href="#pop"><i class="fa-solid fa-xmark"></i></a>
+            </div>
+            <hr>
+            <form id="profileForm" class="flex">
+                <div class="card-profile flex">
+                    <i class="fa-solid fa-circle-user"></i>
+                    <button type="submit">Changer la photo</button>
+                </div>
+        
+                <div class="grid">
+                    <div>
+                        <label for="nom">Nom</label>
+                        <input id="nom" name="nom" type="text" placeholder="Administrateur" />
+                    </div>
+
+                    <div>
+                        <label for="prenom">Prénom</label>
+                        <input id="prenom" name="prenom" type="text" placeholder="Jean" />
+                    </div>
+                    <div class="div3">
+                        <label for="email">Email</label>
+                        <input id="email" name="email" type="email" placeholder="admin@dashboard.com" />
+                    </div>
+                    <div class="div4">
+                        <label for="tel">Téléphone</label>
+                        <input id="tel" name="tel" type="tel" placeholder="+33 6 12 34 56 78" />
+                    </div>
+                </div>
+                <div class="grid2">
+                    <div>
+                        <label for="role">Rôle</label>
+                        <input id="role" name="role" type="text" placeholder="Gestionnaire">
+                    </div>
+
+                    <div>
+                        <label for="lastconn">Dernière connexion</label>
+                        <input id="lastconn" name="lastconn" type="text" placeholder="15 Janvier 2024 à 14:30"/>
+                    </div>  
+                </div>
+            </form>
+            <footer class="card-footer">
+                <button type="button" class="btn btn-ghost">Fermer</button>
+                <button type="submit" form="profileForm" class="btn btn-primary">Sauvegarder</button>
+            </footer>
+        </div>
+  </div>
+</body>
+</html>
