@@ -57,6 +57,10 @@ Grâce à un systeme de grid fluide et des breakpoints ciblés.
 ![settings](./images/setting.png)
 ![notification](./images/notification.png)
 
+## Demo
+
+https://idrissabelloissabii86.github.io/stock-manager/
+
 ## 🌟 Améliorations Possibles
 
 - Ajouter des graphiques dynamiques (Chart.js)
