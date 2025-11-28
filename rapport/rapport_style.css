@@ -133,9 +133,8 @@
     gap: 15px;
     background-color: #fff;
     box-shadow: var(--shadow);
-    align-items: flex;
-    border-radius: 10px;
-    
+    align-items: center;
+    border-radius: 10px;  
 }
 .first .card-icon, .second .card-icon, .three .card-icon{
     width: 70px;
@@ -254,6 +253,10 @@ tbody tr:hover {
 @media (max-width: 768px) {
   .content{
     margin-top: 45px !important;
+  }
+
+  #periode, #categories, #format, .filter button{
+    width: 100%;
   }
   .rapports-first{
     display: flex;

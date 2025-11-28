@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -7,62 +8,68 @@
     <link rel="stylesheet" href="../dash_style_global.css">
     <link rel="stylesheet" href="./cmd_style.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css">
-    <link href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Open+Sans:ital,wght@0,300..800;1,300..800&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
+    <link
+        href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Open+Sans:ital,wght@0,300..800;1,300..800&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
+        rel="stylesheet">
 </head>
+
 <body id="body">
     <input type="checkbox" name="" id="sidebar-checked" hidden>
     <aside class="sidebar">
-    <div>
-      <div class="logo flex">
-        <i class="fa-solid fa-chart-line "></i>
-        <h1>Dashboard</h1>
-      </div>
-      
-      <nav class="nav-links">
-        <a href="../dashboard/dashboard.html" class="flex"><i class="fa-solid fa-gauge-high"></i>Tableau de bord</a>
-        <a href="../analytic/analytics.html" class="flex"><i class="fa-solid fa-chart-line "></i>Analytics</a>
-        <a href="./commandes.html" class="flex"><i class="fa-solid fa-cart-shopping"></i>Commandes</a>
-        <a href="../settings/settings.html" class="flex"><i class="fa-solid fa-gears"></i>Paramètres</a>
-        <a href="../rapport/rapports.html" class="flex"><i class="fa-solid fa-chart-bar"></i>Rapports</a>
-        <a href="../notification/notifications.html" class="flex"><i class="fa-solid fa-bell"></i>Notifications</a>
-      </nav>
-    </div>
-
-    <div class="bottom-links flex">
-        <a href="#" class="admin-btn flex">
-            <div class="icon-admin"><span class="flex"><i class="fa-solid fa-user"></span></i></div>
-            <div class="name-role">
-                <p class="admin-text">Administrateur</p>
-                <p class="admin-statut">Gestionaire</p>
+        <div>
+            <div class="logo flex">
+                <i class="fa-solid fa-chart-line "></i>
+                <h1>Dashboard</h1>
             </div>
-        </a>
-      <a href="#body" class="profile-btn flex"><i class="fa-solid fa-circle-user" style="color: #ffff;"></i>Mon Profil</a>
-      <a href="../index.html" class="logout-btn flex"><i class="fa-solid fa-right-from-bracket"></i>Déconnexion</a>
-    </div>
-  </aside>
 
-  <!-- HEADER -->
-  <header>
-      <div class="header-left flex">
-          <label for="sidebar-checked">
-              <i class="fa-solid fa-bars"></i>
-          </label>
-          
-          <h1 class="title">Gestion de stock - Produits Électroniques</h1>
-      </div>
-      <div class="header-right">
-          <div class="icon flex">
-              <span class="notif flex">3</span>
-              <i class="fa-solid fa-bell"></i>
-              <i class="fa-solid fa-circle-user"></i>
-              <span>Administrateur</span>
-          </div>
-      </div>
-  </header>
+            <nav class="nav-links">
+                <a href="../dashboard/dashboard.html" class="flex"><i class="fa-solid fa-gauge-high"></i>Tableau de
+                    bord</a>
+                <a href="../analytic/analytics.html" class="flex"><i class="fa-solid fa-chart-line "></i>Analytics</a>
+                <a href="./commandes.html" class="flex active"><i class="fa-solid fa-cart-shopping"></i>Commandes</a>
+                <a href="../settings/settings.html" class="flex"><i class="fa-solid fa-gears"></i>Paramètres</a>
+                <a href="../rapport/rapports.html" class="flex"><i class="fa-solid fa-chart-bar"></i>Rapports</a>
+                <a href="../notification/notifications.html" class="flex"><i
+                        class="fa-solid fa-bell"></i>Notifications</a>
+            </nav>
+        </div>
 
-  <!-- CONTENU PRINCIPAL -->
-  <div class="main-content" id="main-content">
-    <main class="content" id="main">
+        <div class="bottom-links flex">
+            <a href="#" class="admin-btn flex">
+                <div class="icon-admin"><span class="flex"><i class="fa-solid fa-user"></span></i></div>
+                <div class="name-role">
+                    <p class="admin-text">Administrateur</p>
+                    <p class="admin-statut">Gestionaire</p>
+                </div>
+            </a>
+            <a href="#body" class="profile-btn flex"><i class="fa-solid fa-circle-user" style="color: #ffff;"></i>Mon
+                Profil</a>
+            <a href="../index.html" class="logout-btn flex"><i
+                    class="fa-solid fa-right-from-bracket"></i>Déconnexion</a>
+        </div>
+    </aside>
+
+    <!-- HEADER -->
+    <header>
+        <div class="header-left flex">
+            <label for="sidebar-checked">
+                <i class="fa-solid fa-bars"></i>
+            </label>
+
+            <h1 class="title">Gestion de stock - Produits Électroniques</h1>
+        </div>
+        <div class="header-right">
+            <div class="icon flex">
+                <span class="notif flex">3</span>
+                <i class="fa-solid fa-bell"></i>
+                <i class="fa-solid fa-circle-user"></i>
+                <span>Administrateur</span>
+            </div>
+        </div>
+    </header>
+
+    <!-- CONTENU PRINCIPAL -->
+    <main class="content main-content" id="main-content">
         <div class="commande-header-logo flex">
             <i class="fa-solid fa-cart-shopping"></i>
             <h2>Gestion des Commandes</h2>
@@ -112,29 +119,29 @@
 
         <section class="">
             <div class="cmd-input">
-                    <div>
-                        <label for="statut">Statut :</label>
-                        <select name="" id="statu">
-                            <option value="">Tous les status</option>
-                            <option value="">En attente</option>
-                            <option value="">En cours</option>
-                            <option value="">Expédiées</option>
-                            <option value="">Livrées</option>
-                        </select>
-                    </div>
-                    <div>
-                        <label for="periode">Période :</label>
-                        <select name="" id="periode">
-                            <option value="">Aujourd'hui</option>
-                            <option value="">Cette semaine</option>
-                            <option value="">Ce mois</option>
-                            <option value="">Toutes</option>
-                        </select>
-                    </div>
-                    <div class="search">
-                        <input type="text" name="" id="" placeholder="Rechercher une commande">
-                        <i class="fa-solid fa-magnifying-glass"></i>
-                    </div>
+                <div>
+                    <label for="statut">Statut :</label>
+                    <select name="" id="statu">
+                        <option value="">Tous les status</option>
+                        <option value="">En attente</option>
+                        <option value="">En cours</option>
+                        <option value="">Expédiées</option>
+                        <option value="">Livrées</option>
+                    </select>
+                </div>
+                <div>
+                    <label for="periode">Période :</label>
+                    <select name="" id="periode">
+                        <option value="">Aujourd'hui</option>
+                        <option value="">Cette semaine</option>
+                        <option value="">Ce mois</option>
+                        <option value="">Toutes</option>
+                    </select>
+                </div>
+                <div class="search">
+                    <input type="text" name="" id="" placeholder="Rechercher une commande">
+                    <i class="fa-solid fa-magnifying-glass"></i>
+                </div>
             </div>
             <div class="commande">
                 <div class="cmd1">
@@ -161,8 +168,9 @@
 
                     </div>
                     <div class="cmd1-button">
-                        <a href="#main" class="details-btn flex"><i class="fa-solid fa-eye"></i>Voir détails</a>
-                        <a href="#main-content" class="edit-btn flex"><i class="fa-solid fa-pen-to-square"></i>Modifier</a>
+                        <a href="#main-content" class="details-btn flex"><i class="fa-solid fa-eye"></i>Voir détails</a>
+                        <a href="#main-content" class="edit-btn flex"><i
+                                class="fa-solid fa-pen-to-square"></i>Modifier</a>
                         <a href="#" class="traite-btn flex"><i class="fa-solid fa-check"></i>Traiter</a>
                     </div>
                 </div>
@@ -191,8 +199,9 @@
 
                     </div>
                     <div class="cmd1-button">
-                        <a href="#main" class="details-btn flex"><i class="fa-solid fa-eye"></i>Voir détails</a>
-                        <a href="#main-content" class="edit-btn flex"><i class="fa-solid fa-pen-to-square"></i>Modifier</a>
+                        <a href="#main-conent" class="details-btn flex"><i class="fa-solid fa-eye"></i>Voir détails</a>
+                        <a href="#main-content" class="edit-btn flex"><i
+                                class="fa-solid fa-pen-to-square"></i>Modifier</a>
                         <a href="#" class="traite-btn flex expedier-btn"><i class="fa-solid fa-truck"></i>Expédier</a>
                     </div>
                 </div>
@@ -221,104 +230,105 @@
 
                     </div>
                     <div class="cmd1-button">
-                        <a href="#main" class="details-btn flex"><i class="fa-solid fa-eye"></i>Voir détails</a>
-                        <a href="#" class="traite-btn flex expedier-btn"><i class="fa-solid fa-location-dot"></i>Suivre</a>
+                        <a href="#main-content" class="details-btn flex"><i class="fa-solid fa-eye"></i>Voir détails</a>
+                        <a href="#" class="traite-btn flex expedier-btn"><i
+                                class="fa-solid fa-location-dot"></i>Suivre</a>
                         <a href="#" class="edit-btn flex"><i class="fa-solid fa-circle-check"></i>Marquer livrée</a>
-                        
+
                     </div>
                 </div>
 
             </div>
         </section>
 
-         <!-- Commande-details popup card -->
+        <!-- Commande-details popup card -->
 
-    <div class="container" id="commande-details">
-        <div class="detail-commande">
-            <div class="popup-cmd-header">
-                <div class="right-icon">
-                    <i class="fa-solid fa-eye"></i>
-                    <p>Détails de la commande</p>
+        <div class="container" id="commande-details">
+            <div class="detail-commande">
+                <div class="popup-cmd-header">
+                    <div class="right-icon">
+                        <i class="fa-solid fa-eye"></i>
+                        <p>Détails de la commande</p>
+                    </div>
+                    <div class="left-icon">
+                        <a href="#"><i class="fa-solid fa-xmark"></i></a>
+                    </div>
                 </div>
-                <div class="left-icon">
-                    <a href="#"><i class="fa-solid fa-xmark"></i></a>
-                </div>
-            </div>
-            <hr>
-            <div class="info-cmd">
-                <h3>Informations Commandes</h3>
                 <hr>
-                <div class="info-cmd-content">
-                    <div class="content-left">
-                        <small>Numéro de commande :</small>
-                        <p>Commande #CMD-2024-001</p>
-                    </div>
-                    <div class="content-right">
-                        <small>Date de commande :</small>
-                        <p>15 Jan 2024</p>
-                    </div>   
-                </div>
-                <div class="info-cmd-content">
-                    <div class="content-left">
-                        <small>Statut :</small>
-                        <p>En attente</p>
-                    </div>
-                    <div class="content-right">
-                        <small>Total :</small>
-                        <p>€1,199.00</p>
-                    </div>   
-                </div>
-                
-                <h3>Informations Client</h3>
-                <hr>
-                <div class="info-cmd-content">
-                    <div class="content-left">
-                        <small>Nom :</small>
-                        <p>Jean Dupont</p>
-                    </div>
-                    <div class="content-right">
-                        <small>Email :</small>
-                        <p>jean.dupont@email.com</p>
-                    </div>   
-                </div>
-                <div class="info-cmd-content">
-                    <div class="content-left">
-                        <small>Téléphone :</small>
-                        <p>+33 6 12 34 56 78</p>
-                    </div>
-                    <div class="content-right">
-                        <small>Adresse :</small>
-                        <p>123 Rue de la Paix, 75001 Paris</p>
-                    </div>   
-                </div>
-                <h3>Articles Commandés</h3>
-                <hr>
-                <div class="info-cmd-content">
-                    <div class="article">
-                        <p>:</p>
-                        <i class="fa-solid fa-mobile"></i>
-                        <p>iPhone 15 Pro <small>128GB - Bleu</small></p>
-                        <p>:1</p>
-                        <div class="price">
-                            <p>:€1,199.00</p>
-                            <p class="blue">:€1,199.00</p>
+                <div class="info-cmd">
+                    <h3>Informations Commandes</h3>
+                    <hr>
+                    <div class="info-cmd-content">
+                        <div class="content-left">
+                            <small>Numéro de commande :</small>
+                            <p>Commande #CMD-2024-001</p>
+                        </div>
+                        <div class="content-right">
+                            <small>Date de commande :</small>
+                            <p>15 Jan 2024</p>
                         </div>
                     </div>
-                    
-                </div>
-                
-            </div>
-            <div class="cmd-button">
-                <a href="#commande-details" class="fermer-btn">Fermer</a>
-                <a href="#" class="imprimer-btn">Imprimer</a>
-            </div>
-        </div>
+                    <div class="info-cmd-content">
+                        <div class="content-left">
+                            <small>Statut :</small>
+                            <p>En attente</p>
+                        </div>
+                        <div class="content-right">
+                            <small>Total :</small>
+                            <p>€1,199.00</p>
+                        </div>
+                    </div>
 
-    </div>
+                    <h3>Informations Client</h3>
+                    <hr>
+                    <div class="info-cmd-content">
+                        <div class="content-left">
+                            <small>Nom :</small>
+                            <p>Jean Dupont</p>
+                        </div>
+                        <div class="content-right">
+                            <small>Email :</small>
+                            <p>jean.dupont@email.com</p>
+                        </div>
+                    </div>
+                    <div class="info-cmd-content">
+                        <div class="content-left">
+                            <small>Téléphone :</small>
+                            <p>+33 6 12 34 56 78</p>
+                        </div>
+                        <div class="content-right">
+                            <small>Adresse :</small>
+                            <p>123 Rue de la Paix, 75001 Paris</p>
+                        </div>
+                    </div>
+                    <h3>Articles Commandés</h3>
+                    <hr>
+                    <div class="info-cmd-content">
+                        <div class="article">
+                            <p>:</p>
+                            <i class="fa-solid fa-mobile"></i>
+                            <p>iPhone 15 Pro <small>128GB - Bleu</small></p>
+                            <p>:1</p>
+                            <div class="price">
+                                <p>:€1,199.00</p>
+                                <p class="blue">:€1,199.00</p>
+                            </div>
+                        </div>
+
+                    </div>
+
+                </div>
+                <div class="cmd-button">
+                    <a href="#commande-details" class="fermer-btn">Fermer</a>
+                    <a href="#" class="imprimer-btn">Imprimer</a>
+                </div>
+            </div>
+
+        </div>
 
     </main>
     <!-- commande modify popup -->
-     <div class="container" id="commande-modify">
+    <div class="container" id="commande-modify">
         <div class="modify-commande">
             <div class="popup-cmd-header">
                 <div class="right-icon">
@@ -340,7 +350,7 @@
                             <option value="">En cours</option>
                             <option value="">Livrée</option>
                         </select>
-                    </div> 
+                    </div>
                 </div>
                 <div class="statut-items">
                     <p>Information de livraison</p>
@@ -349,14 +359,14 @@
                         <input type="text" name="" id="address" placeholder="123 Rue de la Paix, 75001 Paris">
                         <label for="date">Date de livraison prévue :</label>
                         <input type="text" name="" id="date" placeholder="20/01/2024" onfocus="this.type='date'">
-                    </div> 
+                    </div>
                 </div>
                 <div class="statut-items">
                     <p>Notes</p>
                     <div class="modif-input">
                         <label for="note">Notes internes :</label>
                         <input type="text" name="" id="note" placeholder="Notes internes pour l'équipe...">
-                    </div> 
+                    </div>
                 </div>
             </div>
             <hr>
@@ -366,11 +376,11 @@
             </div>
         </div>
     </div>
-  </div>
+    </div>
 
 
 
-  <div class="popup-profile" id="pop">
+    <div class="popup-profile" id="pop">
         <div class="popup-card">
             <div class="card-header flex">
                 <a href="#" class="flex"><i class="fa-solid fa-circle-user"></i>Mon Profil</a>
@@ -382,7 +392,7 @@
                     <i class="fa-solid fa-circle-user"></i>
                     <button type="submit">Changer la photo</button>
                 </div>
-        
+
                 <div class="grid">
                     <div>
                         <label for="nom">Nom</label>
@@ -410,8 +420,8 @@
 
                     <div>
                         <label for="lastconn">Dernière connexion</label>
-                        <input id="lastconn" name="lastconn" type="text" placeholder="15 Janvier 2024 à 14:30"/>
-                    </div>  
+                        <input id="lastconn" name="lastconn" type="text" placeholder="15 Janvier 2024 à 14:30" />
+                    </div>
                 </div>
             </form>
             <footer class="card-footer">
@@ -419,9 +429,10 @@
                 <button type="submit" form="profileForm" class="btn btn-primary">Sauvegarder</button>
             </footer>
         </div>
-  </div>
+    </div>
 
- 
+
 
 </body>
+
 </html>
