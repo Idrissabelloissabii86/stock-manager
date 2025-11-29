@@ -627,6 +627,12 @@ select {
     width: 100%;
     margin: 20px auto;
   }
+  .table-title, .table-button {
+    flex-direction: column;
+  }
+  .table-title{
+    gap: 15px;
+  }
 
   .table-title h2 {
     margin: 0;
@@ -636,8 +642,7 @@ select {
   .table-title .icon-input {
     border: 1px solid;
     align-items: center;
-    width: 200px;
-
+    width: 700px;
   }
 
   .table-title .icon-input i {
@@ -646,7 +651,7 @@ select {
   }
 
   .table-title .icon-input input {
-    width: 155px;
+    /* width: 155px; */
     padding: 8px;
     font-size: 1em;
   }
@@ -654,29 +659,15 @@ select {
   .table-button {
     gap: 8px;
   }
+  .ajout-btn, .export-btn{
+    width: 700px;
+  }
 
-  .ajout-btn a {
-    color: white;
-    text-decoration: none;
+  .ajout-btn a, .export-btn a {
     gap: 8px;
-    align-items: center;
-    justify-content: center;
     padding: 8px 10px;
-    background-color: var(--primary-color);
-    border-radius: 10px;
+    border-radius: 5px;
   }
-
-  .export-btn a {
-    color: white;
-    text-decoration: none;
-    gap: 8px;
-    align-items: center;
-    justify-content: center;
-    padding: 8px 20px;
-    background-color: var(--text-secondary);
-    border-radius: 10px;
-  }
-
   td.actions {
     padding: 35px 0;
     gap: 5px;

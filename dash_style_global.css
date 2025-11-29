@@ -327,9 +327,9 @@ header .title {
 
 .popup-profile .popup-card {
   width: 400px;
-  height: 600px;
+  height: auto;
   background-color: #ffffff;
-  border-radius: 20px;
+  border-radius: 10px;
 }
 
 .popup-profile .card-header {
@@ -416,7 +416,7 @@ select {
   border-radius: 10px;
   border: 1px solid #e6eef7;
   background: #fbfdff;
-  font-size: 1em;
+  font-size: 0.7em;
   outline: none;
   transition: box-shadow .12s, border-color .12s;
 }
@@ -443,6 +443,7 @@ select {
   background: transparent;
   color: var(--muted);
   border-color: #eef2f7;
+  color: #000 !important;
 }
 
 .btn-primary {

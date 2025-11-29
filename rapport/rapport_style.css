@@ -151,6 +151,7 @@
 .first:hover, .second:hover, .three:hover {
   transform: translateY(-5px);
   box-shadow: var(--shadow-lg);
+  transition: all 0.3s ease;
 }
 
 .stat{

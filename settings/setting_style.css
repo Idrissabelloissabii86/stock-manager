@@ -46,16 +46,17 @@
   --transition-xlong: all 0.5s ease;
 }
 
-.text-gris{
+.text-gris {
   color: var(--secondary-color);
 }
-.text-noir{
+
+.text-noir {
   color: #000;
 }
 
 
 /* Settings Style */
-.main-content{
+.main-content {
   margin-top: 60px;
 }
 
@@ -105,15 +106,17 @@
   justify-content: space-between;
 }
 
-.body-div1 select{
+.body-div1 select {
   font-size: 12px;
 }
-.body-div1 input{
+
+.body-div1 input {
   padding: 3px;
   width: 80px;
   border: 1px solid var(--secondary-color);
   border-radius: 5px;
 }
+
 /* Toggle btn first */
 .check-btn {
   width: 50px;
@@ -135,85 +138,94 @@
   border-radius: 50%;
 }
 
-#label-input:checked + .check-btn {
+#label-input:checked+.check-btn {
   background-color: var(--primary-color);
 }
 
-#label-input:checked + .check-btn::before {
+#label-input:checked+.check-btn::before {
   right: 2px;
   left: auto;
 }
 
 /* Toggle-btn second */
 
-#second-toggle:checked + .check-btn {
+#second-toggle:checked+.check-btn {
   background-color: var(--primary-color);
 }
 
-#second-toggle:checked + .check-btn::before {
+#second-toggle:checked+.check-btn::before {
   right: 2px;
   left: auto;
 }
+
 /* Toggle-btn third */
-#third-toggle:checked + .check-btn {
+#third-toggle:checked+.check-btn {
   background-color: var(--primary-color);
 }
 
-#third-toggle:checked + .check-btn::before {
+#third-toggle:checked+.check-btn::before {
   right: 2px;
   left: auto;
 }
+
 /* Fourty toggle */
-#fourty-toggle:checked + .check-btn {
+#fourty-toggle:checked+.check-btn {
   background-color: var(--primary-color);
 }
 
-#fourty-toggle:checked + .check-btn::before {
+#fourty-toggle:checked+.check-btn::before {
   right: 2px;
   left: auto;
 }
 
 /* Finish */
-.param-btn-activer, .param-btn-changer, .param-btn-session{
+.param-btn-activer,
+.param-btn-changer,
+.param-btn-session {
   padding: 5px 15px;
   border-radius: 6px;
   border: none;
 }
-.param-btn-changer{
+
+.param-btn-changer {
   border: 1px solid var(--secondary-color);
   background-color: #ffffff;
 }
-.param-btn-session{
+
+.param-btn-session {
   background-color: var(--primary-color);
   color: #ffffff;
 }
 
-.param-last-section{
+.param-last-section {
   gap: 8px;
   padding: 15px;
   background-color: #ffffff;
 }
 
-.sauvegarder, .export, .reload, .delete{
+.sauvegarder,
+.export,
+.reload,
+.delete {
   padding: 5px 20px;
   display: flex;
   align-items: center;
   gap: 10px;
   color: var(--text-white);
   background-color: var(--primary-color);
-  height: 50px;
   font-size: 15px;
   border-radius: 5px;
   border: none;
 }
 
-.export{
+.export {
   color: var(--text-secondary);
   background-color: #ffffff;
   border: 1px solid var(--secondary-color);
 }
 
-.reload, .delete{
+.reload,
+.delete {
   color: var(--text-secondary);
   background-color: rgb(225, 223, 223);
 }
@@ -222,7 +234,7 @@
 
 
 @media (max-width: 1440px) {
-  
+
   .content .title {
     gap: 5px;
   }
@@ -258,13 +270,15 @@
     font-size: 15px;
   }
 
-  .param-btn-activer, .param-btn-changer, .param-btn-session{
+  .param-btn-activer,
+  .param-btn-changer,
+  .param-btn-session {
     padding: 5px 10px;
     border-radius: 6px;
   }
 
 
-  
+
 }
 
 @media (max-width: 1024px) {
@@ -283,12 +297,23 @@
     gap: 8px;
     padding: 15px;
   }
-  .header-right .icon .notif{
+
+  .header-right .icon .notif {
     width: 5px;
     height: 5px;
     font-size: 10px;
     padding: 9px;
     left: 5px;
-    top:2px;
+    top: 2px;
+  }
+
+  .sauvegarder,
+  .export,
+  .reload,
+  .delete {
+    padding: 3px 15px;
+    gap: 5px;
+    font-size: 15px;
+    border-radius: 5px;
   }
 }

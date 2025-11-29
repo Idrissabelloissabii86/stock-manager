@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -7,49 +8,56 @@
     <link rel="stylesheet" href="../dash_style_global.css">
     <link rel="stylesheet" href="./analytic_style.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css">
-    <link href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Open+Sans:ital,wght@0,300..800;1,300..800&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
+    <link
+        href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Open+Sans:ital,wght@0,300..800;1,300..800&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
+        rel="stylesheet">
 </head>
+
 <body id="body">
     <input type="checkbox" name="" id="sidebar-checked" hidden>
     <aside class="sidebar">
-    <div>
-      <div class="logo flex">
-        <i class="fa-solid fa-chart-line "></i>
-        <h1>Dashboard</h1>
-      </div>
-      <hr>
-      <nav class="nav-links">
-        <a href="../dashboard/dashboard.html" class="flex"><i class="fa-solid fa-gauge-high"></i>Tableau de bord</a>
-        <a href="./analytics.html" class="flex active"><i class="fa-solid fa-chart-line "></i>Analytics</a>
-        <a href="../commande/commandes.html" class="flex"><i class="fa-solid fa-cart-shopping"></i>Commandes</a>
-        <a href="../settings/settings.html" class="flex"><i class="fa-solid fa-gears"></i>Paramètres</a>
-        <a href="../rapport/rapports.html" class="flex"><i class="fa-solid fa-chart-bar"></i>Rapports</a>
-        <a href="../notification/notifications.html" class="flex"><i class="fa-solid fa-bell"></i>Notifications</a>
-      </nav>
-    </div>
-    <div>
-    <hr>
-    <div class="bottom-links flex">
-        
-        <a href="#" class="admin-btn flex">
-            <div class="icon-admin"><span class="flex"><i class="fa-solid fa-user"></span></i></div>
-            <div class="name-role">
-                <p class="admin-text">Administrateur</p>
-                <p class="admin-statut">Gestionaire</p>
+        <div>
+            <div class="logo flex">
+                <i class="fa-solid fa-chart-line "></i>
+                <h1>Dashboard</h1>
             </div>
-        </a>
-      <a href="#body" class="profile-btn flex"><i class="fa-solid fa-circle-user" style="color: #ffff;"></i>Mon Profil</a>
-      <a href="../index.html" class="logout-btn flex"><i class="fa-solid fa-right-from-bracket"></i>Déconnexion</a>
-    </div>
-    </div>
-  </aside>
-  <!-- HEADER -->
-  <header>
+            <hr>
+            <nav class="nav-links">
+                <a href="../dashboard/dashboard.html" class="flex"><i class="fa-solid fa-gauge-high"></i>Tableau de
+                    bord</a>
+                <a href="./analytics.html" class="flex active"><i class="fa-solid fa-chart-line "></i>Analytics</a>
+                <a href="../commande/commandes.html" class="flex"><i class="fa-solid fa-cart-shopping"></i>Commandes</a>
+                <a href="../settings/settings.html" class="flex"><i class="fa-solid fa-gears"></i>Paramètres</a>
+                <a href="../rapport/rapports.html" class="flex"><i class="fa-solid fa-chart-bar"></i>Rapports</a>
+                <a href="../notification/notifications.html" class="flex"><i
+                        class="fa-solid fa-bell"></i>Notifications</a>
+            </nav>
+        </div>
+        <div>
+            <hr>
+            <div class="bottom-links flex">
+
+                <a href="#" class="admin-btn flex">
+                    <div class="icon-admin"><span class="flex"><i class="fa-solid fa-user"></span></i></div>
+                    <div class="name-role">
+                        <p class="admin-text">Administrateur</p>
+                        <p class="admin-statut">Gestionaire</p>
+                    </div>
+                </a>
+                <a href="#body" class="profile-btn flex"><i class="fa-solid fa-circle-user"
+                        style="color: #ffff;"></i>Mon Profil</a>
+                <a href="../index.html" class="logout-btn flex"><i
+                        class="fa-solid fa-right-from-bracket"></i>Déconnexion</a>
+            </div>
+        </div>
+    </aside>
+    <!-- HEADER -->
+    <header>
         <div class="header-left flex">
             <label for="sidebar-checked">
                 <i class="fa-solid fa-bars"></i>
             </label>
-            
+
             <h1 class="title">Gestion de stock - Produits Électroniques</h1>
         </div>
         <div class="header-right">
@@ -67,16 +75,16 @@
 
 
 
-  <!-- CONTENU PRINCIPAL -->
+    <!-- CONTENU PRINCIPAL -->
 
     <!-- CONTENU -->
     <main class="main-content content">
-      <div class="analytic-header-logo flex">
-        <i class="fa-solid fa-chart-line "></i>
-        <h1>Analytics & Rapports</h1>
-      </div>
-      <p>Analyse complète des performances et tendances</p>
-      <section>
+        <div class="analytic-header-logo flex">
+            <i class="fa-solid fa-chart-line "></i>
+            <h1>Analytics & Rapports</h1>
+        </div>
+        <p>Analyse complète des performances et tendances</p>
+        <section>
             <div class="dashboard-card">
                 <div class="card first flex">
                     <div class="card-icon flex">
@@ -199,7 +207,9 @@
 
                 </div>
                 <div class="left-footer flex">
-                    <span class="blue"></span> <p>Ventes Réelles</p><span class="green"></span><p>Objectifs</p>
+                    <span class="blue"></span>
+                    <p>Ventes Réelles</p><span class="green"></span>
+                    <p>Objectifs</p>
                 </div>
             </div>
             <div class="ventes-right">
@@ -216,31 +226,35 @@
                             <p style="color: blue;">€15,980</p>
                         </div>
                         <div class="percent flex">
-                            <span></span><p>35%</p>
+                            <span></span>
+                            <p>35%</p>
                         </div>
                         <div class="top-text flex">
                             <p>Laptops</p>
                             <p style="color: blue;">€11,415</p>
                         </div>
                         <div class="percent flex">
-                            <span></span><p>25%</p>
+                            <span></span>
+                            <p>25%</p>
                         </div>
                         <div class="top-text flex">
                             <p>Tablettes</p>
                             <p style="color: blue;">€9,132</p>
                         </div>
                         <div class="percent flex">
-                            <span></span><p>20%</p>
+                            <span></span>
+                            <p>20%</p>
                         </div>
                         <div class="top-text flex">
                             <p>Accessoires</p>
                             <p style="color: blue;">€9,132</p>
                         </div>
                         <div class="percent flex">
-                            <span></span><p>20%</p>
+                            <span></span>
+                            <p>20%</p>
                         </div>
                     </div>
-                        
+
                 </div>
             </div>
         </section>
@@ -248,7 +262,7 @@
         <!-- Tableau -->
 
         <section class="stock-table">
-                    
+
             <div class="table-title flex">
                 <div class="title-left flex">
                     <i class="fa-solid fa-trophy"></i>
@@ -259,16 +273,16 @@
                     <option value="">Par revenus</option>
                     <option value="">Par marge</option>
                 </select>
-                
+
             </div>
             <table>
                 <thead>
                     <tr>
-                    <th>Rang</th>
-                    <th>Produit</th>
-                    <th>Ventes</th>
-                    <th>Revenues</th>
-                    <th>Marge</th>
+                        <th>Rang</th>
+                        <th>Produit</th>
+                        <th>Ventes</th>
+                        <th>Revenues</th>
+                        <th>Marge</th>
                     </tr>
                 </thead>
                 <tbody>
@@ -278,13 +292,13 @@
                         </td>
                         <td>
                             <div class="product-info">
-                            <div class="icon"><i class="fa-solid fa-mobile"></i></div>
-                            <div>
-                                <strong>iPhone 15 Pro</strong><br>
-                            </div>
+                                <div class="icon"><i class="fa-solid fa-mobile"></i></div>
+                                <div>
+                                    <strong>iPhone 15 Pro</strong><br>
+                                </div>
                             </div>
                         </td>
-                        
+
                         <td>234</td>
                         <td><span class="status">€280,866</span></td>
                         <td class="actions">
@@ -298,13 +312,13 @@
                         <td>
                             <div class="product-info">
                                 <div class="icon"><i class="fa-solid fa-desktop"></i></div>
-                            <div>
-                                <strong>MacBook Pro 16"</strong><br>
-                            </div>
+                                <div>
+                                    <strong>MacBook Pro 16"</strong><br>
+                                </div>
                             </div>
                         </td>
-                        
-                        
+
+
                         <td>89</td>
                         <td><span class="status">€257,911</span></td>
                         <td class="actions">
@@ -312,21 +326,21 @@
                         </td>
                     </tr>
 
-                    
-                    
+
+
                     <tr>
                         <td>
-                           <span class="span-analytics" style="background-color: orange;">3</span>
+                            <span class="span-analytics" style="background-color: orange;">3</span>
                         </td>
                         <td>
                             <div class="product-info">
-                            <div class="icon"><i class="fa-solid fa-headphones"></i></div>
-                            <div>
-                                <strong>AirPods Pro 2</strong><br>
-                            </div>
+                                <div class="icon"><i class="fa-solid fa-headphones"></i></div>
+                                <div>
+                                    <strong>AirPods Pro 2</strong><br>
+                                </div>
                             </div>
                         </td>
-                        
+
                         <td>445</td>
                         <td><span>€124,155</span></td>
                         <td class="actions">
@@ -339,15 +353,15 @@
 
 
     </main>
-  
 
 
 
 
 
 
-  <!-- Pop-up -->
-  <div class="popup-profile" id="pop">
+
+    <!-- Pop-up -->
+    <div class="popup-profile" id="pop">
         <div class="popup-card">
             <div class="card-header flex">
                 <a href="#" class="flex"><i class="fa-solid fa-circle-user"></i>Mon Profil</a>
@@ -359,43 +373,44 @@
                     <i class="fa-solid fa-circle-user"></i>
                     <button type="submit">Changer la photo</button>
                 </div>
-        
+
                 <div class="grid">
                     <div>
                         <label for="nom">Nom</label>
-                        <input id="nom" name="nom" type="text" placeholder="Administrateur" />
+                        <input id="nom" name="nom" type="text" value="Administrateur" />
                     </div>
 
                     <div>
                         <label for="prenom">Prénom</label>
-                        <input id="prenom" name="prenom" type="text" placeholder="Jean" />
+                        <input id="prenom" name="prenom" type="text" value="Jean" />
                     </div>
                     <div class="div3">
                         <label for="email">Email</label>
-                        <input id="email" name="email" type="email" placeholder="admin@dashboard.com" />
+                        <input id="email" name="email" type="email" value="admin@dashboard.com" />
                     </div>
                     <div class="div4">
                         <label for="tel">Téléphone</label>
-                        <input id="tel" name="tel" type="tel" placeholder="+33 6 12 34 56 78" />
+                        <input id="tel" name="tel" type="tel" value="+33 6 12 34 56 78" />
                     </div>
                 </div>
                 <div class="grid2">
                     <div>
                         <label for="role">Rôle</label>
-                        <input id="role" name="role" type="text" placeholder="Gestionnaire">
+                        <input id="role" name="role" type="text" value="Gestionnaire">
                     </div>
 
                     <div>
                         <label for="lastconn">Dernière connexion</label>
-                        <input id="lastconn" name="lastconn" type="text" placeholder="15 Janvier 2024 à 14:30"/>
-                    </div>  
+                        <input id="lastconn" name="lastconn" type="text" value="15 Janvier 2024 à 14:30" />
+                    </div>
                 </div>
             </form>
             <footer class="card-footer">
-                <button type="button" class="btn btn-ghost">Fermer</button>
+                <a href="#pop"><button type="button" class="btn btn-ghost">Fermer</button></a>
                 <button type="submit" form="profileForm" class="btn btn-primary">Sauvegarder</button>
             </footer>
         </div>
-  </div>
+    </div>
 </body>
+
 </html>

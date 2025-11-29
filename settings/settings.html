@@ -5,7 +5,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Stock Manager Dashboard</title>
-     <link rel="stylesheet" href="../dash_style_global.css">
+    <link rel="stylesheet" href="../dash_style_global.css">
     <link rel="stylesheet" href="./setting_style.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css">
     <link
@@ -68,173 +68,173 @@
     </header>
     <!-- CONTENU PRINCIPAL -->
     <main class="main-content content">
-            <div class="title flex">
-                <i class="fa-solid fa-gears"></i>
-                <h2>Paramètres & Configuration</h2>
+        <div class="title flex">
+            <i class="fa-solid fa-gears"></i>
+            <h2>Paramètres & Configuration</h2>
+        </div>
+        <p>Configuration du système et préférences utilisateur</p>
+        <section class="param">
+            <div class="param-head">
+                <i class="fa-solid fa-sliders"></i>
+                <p class="text-noir">Paramètres Généreaux</p>
             </div>
-            <p>Configuration du système et préférences utilisateur</p>
-            <section class="param">
-                <div class="param-head">
-                    <i class="fa-solid fa-sliders"></i>
-                    <p class="text-noir">Paramètres Généreaux</p>
+            <div class="param-body">
+                <div class="body-div1">
+                    <div>
+                        <p class="text-noir">Notifications</p>
+                        <p>Recevoir des notifications par email</p>
+                    </div>
+                    <div>
+                        <div>
+                            <input id="label-input" type="checkbox" hidden checked>
+                            <label for="label-input" class="check-btn"></label>
+                        </div>
+                    </div>
                 </div>
-                <div class="param-body">
-                    <div class="body-div1">
+                <div class="body-div1">
+                    <div>
+                        <p class="text-noir">Mode Sombre</p>
+                        <p>Activer le thème sombre</p>
+                    </div>
+                    <div>
                         <div>
-                            <p class="text-noir">Notifications</p>
-                            <p>Recevoir des notifications par email</p>
-                        </div>
-                        <div>
-                            <div>
-                                <input id="label-input" type="checkbox" hidden checked>
-                                <label for="label-input" class="check-btn"></label>
-                            </div>
+                            <input id="second-toggle" type="checkbox" hidden>
+                            <label for="second-toggle" class="check-btn"></label>
                         </div>
                     </div>
-                    <div class="body-div1">
+                </div>
+                <div class="body-div1">
+                    <div>
+                        <p class="text-noir">Auto-sauvegarde</p>
+                        <p>Sauvegarder automatiquement les modifications</p>
+                    </div>
+                    <div>
                         <div>
-                            <p class="text-noir">Mode Sombre</p>
-                            <p>Activer le thème sombre</p>
-                        </div>
-                        <div>
-                            <div>
-                                <input id="second-toggle" type="checkbox" hidden>
-                                <label for="second-toggle" class="check-btn"></label>
-                            </div>
+                            <input id="third-toggle" type="checkbox" hidden checked>
+                            <label for="third-toggle" class="check-btn"></label>
                         </div>
                     </div>
-                    <div class="body-div1">
-                        <div>
-                            <p class="text-noir">Auto-sauvegarde</p>
-                            <p>Sauvegarder automatiquement les modifications</p>
-                        </div>
-                        <div>
-                            <div>
-                                <input id="third-toggle" type="checkbox" hidden checked>
-                                <label for="third-toggle" class="check-btn"></label>
-                            </div>
-                        </div>
+                </div>
+                <div class="body-div1">
+                    <div>
+                        <p class="text-noir">Langue</p>
+                        <p>Langue de l'interface</p>
                     </div>
-                    <div class="body-div1">
-                        <div>
-                            <p class="text-noir">Langue</p>
-                            <p>Langue de l'interface</p>
-                        </div>
-                        <div>
-                            <select class="param-lang-select">
-                                <option value="">Français</option>
-                                <option value="">Anglais</option>
-                                <option value="">Haoussa</option>
-                                <option value="">Arabe</option>
-                            </select>
-                        </div>
+                    <div>
+                        <select class="param-lang-select">
+                            <option value="">Français</option>
+                            <option value="">Anglais</option>
+                            <option value="">Haoussa</option>
+                            <option value="">Arabe</option>
+                        </select>
                     </div>
+                </div>
 
+            </div>
+        </section>
+        <section class="param">
+            <div class="param-head">
+                <i class="fa-solid fa-boxes-stacked"></i>
+                <p class="text-noir">Gestion de Stock</p>
+            </div>
+            <div class="param-body">
+                <div class="body-div1">
+                    <div>
+                        <p class="text-noir">Seuil d'alerte</p>
+                        <p>Nombre minimum d'articles avant alerte</p>
+                    </div>
+                    <div>
+                        <input type="number" name="" id="" value="5">
+                    </div>
                 </div>
-            </section>
-            <section class="param">
-                    <div class="param-head">
-                        <i class="fa-solid fa-boxes-stacked"></i>
-                        <p class="text-noir">Gestion de Stock</p>
+                <div class="body-div1">
+                    <div>
+                        <p class="text-noir">Auto-commande</p>
+                        <p>commander automatiquement en cas de stock faible</p>
                     </div>
-                    <div class="param-body">
-                        <div class="body-div1">
-                            <div>
-                                <p class="text-noir">Seuil d'alerte</p>
-                                <p>Nombre minimum d'articles avant alerte</p>
-                            </div>
-                            <div>
-                                <input type="number" name="" id="">
-                            </div>
-                        </div>
-                        <div class="body-div1">
-                            <div>
-                                <p class="text-noir">Auto-commande</p>
-                                <p>commander automatiquement en cas de stock faible</p>
-                            </div>
-                            <div>
-                                <div>
-                                    <input id="fourty-toggle" type="checkbox" hidden>
-                                    <label for="fourty-toggle" class="check-btn"></label>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="body-div1">
-                            <div>
-                                <p class="text-noir">Devise</p>
-                                <p>Devise d'affichage</p>
-                            </div>
-                            <div>
-                                <select name="" id="">
-                                    <option value="">Euro (€)</option>
-                                    <option value="">Dollar ($)</option>
-                                    <option value="">Franc (₣)</option>
-                                    <option value="">Naira (₦)</option>
-                                </select>
-                            </div>
+                    <div>
+                        <div>
+                            <input id="fourty-toggle" type="checkbox" hidden>
+                            <label for="fourty-toggle" class="check-btn"></label>
                         </div>
                     </div>
-            </section>
-            <section class="param">
-                    <div class="param-head">
-                        <i class="fa-solid fa-shield"></i>
-                        <p class="text-noir">Sécurité</p>
+                </div>
+                <div class="body-div1">
+                    <div>
+                        <p class="text-noir">Devise</p>
+                        <p>Devise d'affichage</p>
                     </div>
-                    <div class="param-body">
-                        <div class="body-div1">
-                            <div>
-                                <p class="text-noir">Authentification à deux facteurs</p>
-                                <p>Activer la 2FA pour plus de sécurité</p>
-                            </div>
-                            <div>
-                                <button type="button" class="param-btn-activer">Activer</button>
-                            </div>
-                        </div>
-                        <div class="body-div1">
-                            <div>
-                                <p class="text-noir">Changer le mot de passe</p>
-                                <p>Modifier votre mot de passe actuel</p>
-                            </div>
-                            <div>
-                                <button type="button" class="param-btn-changer">Changer</button>
-                            </div>
-                        </div>
-                        <div class="body-div1">
-                            <div>
-                                <p class="text-noir">Sessions actives</p>
-                                <p>Gérer les sessions connectées</p>
-                            </div>
-                            <div>
-                                <button type="button" class="param-btn-session">Voir (3)</button>
-                            </div>
-                        </div>
+                    <div>
+                        <select name="" id="">
+                            <option value="">Euro (€)</option>
+                            <option value="">Dollar ($)</option>
+                            <option value="">Franc (₣)</option>
+                            <option value="">Naira (₦)</option>
+                        </select>
                     </div>
-            </section>
-            <section class="param">
-                    <div class="param-head">
-                        <i class="fa-solid fa-database"></i>
-                        <p class="text-noir">Système</p>
+                </div>
+            </div>
+        </section>
+        <section class="param">
+            <div class="param-head">
+                <i class="fa-solid fa-shield"></i>
+                <p class="text-noir">Sécurité</p>
+            </div>
+            <div class="param-body">
+                <div class="body-div1">
+                    <div>
+                        <p class="text-noir">Authentification à deux facteurs</p>
+                        <p>Activer la 2FA pour plus de sécurité</p>
                     </div>
-                    <div class="param-last-section flex">
-                        <button class="sauvegarder">
-                            <i class="fa-solid fa-floppy-disk"></i>
-                            <p>Sauvegarder la configuration</p>
-                        </button>
-                        <button class="export">
-                            <i class="fa-solid fa-download"></i>
-                            <p>Exporter les paramètres</p>
-                        </button>
-                        <button class="reload">
-                            <i class="fa-solid fa-arrow-rotate-left"></i>
-                            <p>Réinitialiser par défaut</p>
-                        </button>
-                        <button class="delete">
-                            <i class="fa-solid fa-trash"></i>
-                            <p>Effacer toutes les données</p>
-                        </button>
-                        
+                    <div>
+                        <button type="button" class="param-btn-activer">Activer</button>
                     </div>
-            </section>
+                </div>
+                <div class="body-div1">
+                    <div>
+                        <p class="text-noir">Changer le mot de passe</p>
+                        <p>Modifier votre mot de passe actuel</p>
+                    </div>
+                    <div>
+                        <button type="button" class="param-btn-changer">Changer</button>
+                    </div>
+                </div>
+                <div class="body-div1">
+                    <div>
+                        <p class="text-noir">Sessions actives</p>
+                        <p>Gérer les sessions connectées</p>
+                    </div>
+                    <div>
+                        <button type="button" class="param-btn-session">Voir (3)</button>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section class="param">
+            <div class="param-head">
+                <i class="fa-solid fa-database"></i>
+                <p class="text-noir">Système</p>
+            </div>
+            <div class="param-last-section flex">
+                <button class="sauvegarder">
+                    <i class="fa-solid fa-floppy-disk"></i>
+                    <p>Sauvegarder la configuration</p>
+                </button>
+                <button class="export">
+                    <i class="fa-solid fa-download"></i>
+                    <p>Exporter les paramètres</p>
+                </button>
+                <button class="reload">
+                    <i class="fa-solid fa-arrow-rotate-left"></i>
+                    <p>Réinitialiser par défaut</p>
+                </button>
+                <button class="delete">
+                    <i class="fa-solid fa-trash"></i>
+                    <p>Effacer toutes les données</p>
+                </button>
+
+            </div>
+        </section>
     </main>
     <div class="popup-profile" id="pop">
         <div class="popup-card">
@@ -252,36 +252,36 @@
                 <div class="grid">
                     <div>
                         <label for="nom">Nom</label>
-                        <input id="nom" name="nom" type="text" placeholder="Administrateur" />
+                        <input id="nom" name="nom" type="text" value="Administrateur" />
                     </div>
 
                     <div>
                         <label for="prenom">Prénom</label>
-                        <input id="prenom" name="prenom" type="text" placeholder="Jean" />
+                        <input id="prenom" name="prenom" type="text" value="Jean" />
                     </div>
                     <div class="div3">
                         <label for="email">Email</label>
-                        <input id="email" name="email" type="email" placeholder="admin@dashboard.com" />
+                        <input id="email" name="email" type="email" value="admin@dashboard.com" />
                     </div>
                     <div class="div4">
                         <label for="tel">Téléphone</label>
-                        <input id="tel" name="tel" type="tel" placeholder="+33 6 12 34 56 78" />
+                        <input id="tel" name="tel" type="tel" value="+33 6 12 34 56 78" />
                     </div>
                 </div>
                 <div class="grid2">
                     <div>
                         <label for="role">Rôle</label>
-                        <input id="role" name="role" type="text" placeholder="Gestionnaire">
+                        <input id="role" name="role" type="text" value="Gestionnaire">
                     </div>
 
                     <div>
                         <label for="lastconn">Dernière connexion</label>
-                        <input id="lastconn" name="lastconn" type="text" placeholder="15 Janvier 2024 à 14:30" />
+                        <input id="lastconn" name="lastconn" type="text" value="15 Janvier 2024 à 14:30" />
                     </div>
                 </div>
             </form>
             <footer class="card-footer">
-                <button type="button" class="btn btn-ghost">Fermer</button>
+                <a href="#pop"><button type="button" class="btn btn-ghost">Fermer</button></a>
                 <button type="submit" form="profileForm" class="btn btn-primary">Sauvegarder</button>
             </footer>
         </div>

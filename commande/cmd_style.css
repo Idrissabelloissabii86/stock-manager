@@ -154,6 +154,7 @@
 .four:hover {
   transform: translateY(-5px);
   box-shadow: var(--shadow-lg);
+  transition: all 0.3s ease;
 }
 
 /* Commande search bar */
@@ -296,7 +297,7 @@
 }
 
 /* Commande detail popup */
-#main-content:target .container {
+#main-content:target #commande-details {
   display: flex;
 }
 
@@ -405,13 +406,13 @@ small {
   display: flex;
   justify-content: right;
   gap: 15px;
-  padding: 15px;
-  margin-top: 20px;
+  padding: 10px;
+  margin-top: 10px;
 }
 
 .cmd-button a {
   text-decoration: none;
-  padding: 10px 25px;
+  padding: 3px 15px;
   border: 1px solid gray;
   border-radius: 7px;
   font-size: 20px;
@@ -433,7 +434,7 @@ small {
   display: none;
 }
 
-#main-content:target #commande-modify {
+#test:target #commande-modify {
   display: flex;
 
 }
@@ -458,7 +459,7 @@ small {
 
 .modify-commande {
   width: 500px;
-  height: 850px;
+  height: auto;
   background-color: #fff;
   border-radius: 10px;
 }
@@ -516,14 +517,14 @@ input {
 }
 
 .buttons-modify {
-  padding: 20px;
+  padding: 10px;
   display: flex;
   justify-content: right;
   gap: 10px;
 }
 
 .annuler {
-  padding: 10px 15px;
+  padding: 3px 10px;
   text-decoration: none;
   color: #000;
   border: 1px solid gray;
@@ -531,7 +532,7 @@ input {
 }
 
 .sauvegarder {
-  padding: 10px 15px;
+  padding: 3px 10px;
   text-decoration: none;
   color: #fff;
   border: 1px solid gray;

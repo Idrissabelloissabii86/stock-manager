@@ -142,6 +142,7 @@
 .four:hover {
   transform: translateY(-5px);
   box-shadow: var(--shadow-lg);
+  transition: all 0.3s ease;
 }
 
 /* Filtre section */
@@ -179,24 +180,13 @@
   align-items: flex-end;
 }
 
-/* .filter button {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  padding: 15px;
-  border: none;
-  gap: 10px;
-  color: #fff;
-  background-color: #1d4ed8;
-  border-radius: 5px;
-} */
-
 .filter button {
   display: flex;
   justify-content: center;
   align-items: center;
-  padding: 10px 15px;
+  padding: 10px 25px;
   border: none;
+  height: 26px;
   gap: 10px;
   color: #fff;
   background-color: #1d4ed8;
