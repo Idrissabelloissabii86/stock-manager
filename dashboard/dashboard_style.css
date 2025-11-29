@@ -55,7 +55,7 @@
 }
 
 .content h2 {
-  font-size: 32px !important;
+  font-size: 32px;
   color: var(--text-primary);
 }
 
@@ -137,6 +137,7 @@
 .four:hover {
   transform: translateY(-5px);
   box-shadow: var(--shadow-lg);
+  transition: all 0.3s ease;
 }
 
 /* Dashboard Stock Tableau */
@@ -606,7 +607,7 @@ select {
 @media (max-width: 768px) {
   /* Style de sidebar header et main-content */
 
-  .content {
+  .main-content {
     padding: 15px !important;
   }
 

@@ -298,7 +298,6 @@
 /* Commande detail popup */
 #main-content:target .container {
   display: flex;
-
 }
 
 #commande-details {
@@ -326,7 +325,7 @@
 
 .detail-commande {
   width: 500px;
-  height: 900px;
+  height: auto;
   background-color: #fff;
   border-radius: 10px;
 }
